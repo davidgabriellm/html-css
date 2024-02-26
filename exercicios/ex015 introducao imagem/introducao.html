@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com imagens</title>
+    <style>
+        .imagemlogo{
+            width: 300px;
+            
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 23px;
+            width: 700px;
+            margin: auto;
+            background-image: url(imagem/bg.jpg);
+            background-repeat: no-repeat;/*não ficar repetindo a imagem*/
+            background-size: cover; /*largura altura*/
+            background-attachment: fixed; /*scroll*/
+            background-position: right bottom;
+            
+        }
+        .imagemhtml{
+            float: left;
+        }
+        .imagemcss{
+            float: right;
+        }
+        p{
+            line-height: 1,5;
+            text-align: justify;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>trabalhando com imagens</h1>
+    <h2>imagens vetoriais x bitmap</h2>
+    <img src="imagem/logo_ser-frontend-ico.png" class="imagemlogo" alt="logo serfrontend">
+    <br>
+    <img src="imagem/logo_ser-frontend-ico.svg" class="imagemlogo" alt="logo serfrontend">
+    
+    <h2>imagens transparentes</h2>
+    <img src="imagem/logo_ser-frontend-ico-transparente.gif" alt="">
+    <br>
+    <img src="imagem/logo_ser-frontend-ico-transparente.png" alt="">
+
+    <h2>gif animado</h2>
+    <img src="imagem/walk.gif" alt="mulher andando">
+
+    <h2>float</h2>
+    <img src="imagem/html5.png" alt="logo HTML5" class="imagemhtml">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium suscipit aspernatur deleniti vitae? Voluptate itaque beatae porro distinctio dolores a, unde id iusto inventore ea exercitationem illum fugiat, assumenda ut!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo provident voluptatem quaerat ea id velit fuga, ipsa cum officia aliquid voluptatum odio voluptatibus facilis repellendus sequi iusto, ipsam accusantium perspiciatis. Quia ipsam dicta exercitationem eius accusamus recusandae fuga! Amet optio eum voluptatibus omnis. Assumenda facere delectus doloremque incidunt unde modi obcaecati illo. Obcaecati voluptates alias quaerat quia iste laborum nulla aspernatur! Facere, dolorum error iusto eum aut accusantium dolor molestiae repudiandae veniam a neque voluptatem modi. Minima maxime iusto nobis?</p>
+    
+    <img src="imagem/css3.png" alt="logo CSS3" class="imagemcss">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium suscipit aspernatur deleniti vitae? Voluptate itaque beatae porro distinctio dolores a, unde id iusto inventore ea exercitationem illum fugiat, assumenda ut!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo provident voluptatem quaerat ea id velit fuga, ipsa cum officia aliquid voluptatum odio voluptatibus facilis repellendus sequi iusto, ipsam accusantium perspiciatis. Quia ipsam dicta exercitationem eius accusamus recusandae fuga! Amet optio eum voluptatibus omnis. Assumenda facere delectus doloremque incidunt unde modi obcaecati illo. Obcaecati voluptates alias quaerat quia iste laborum nulla aspernatur! Facere, dolorum error iusto eum aut accusantium dolor molestiae repudiandae veniam a neque voluptatem modi. Minima maxime iusto nobis?</p>
+    
+</body>
+</html>

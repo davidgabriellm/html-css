@@ -1,0 +1,137 @@
+:root{
+    --primary-color: #FED001;
+}
+html{
+    /*font-size: 62.5%;
+    font-family: 'inter', sans-serif;
+    font-weight: 400;*/
+    font: 400 62.5% 'inter', sans-serif;
+}
+a, p{
+    font-size: 1.6rem;
+}
+
+.upper{
+    text-transform: uppercase;
+}
+.btn{
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    padding: 1.6rem;
+    display: inline-block; 
+    color: black;
+}
+.wrapperConteiner-dark{
+    background-color: #2a2a2a;
+    color: #fafafa;
+}
+.wrapperConteiner-ligth{
+    background-color: #fafafa;
+}
+.wrapperConteiner-dark2{
+    background-color: #003464;
+    color: #fafafa;
+}
+.conteiner{
+    max-width: 127.6rem;
+    margin: auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.6rem 0;
+}
+.header_nav a{
+    color: var(--primary-color);
+    padding: 0.75em 1.15em;
+    border: 1px solid;
+    text-decoration: none;
+    border-radius: 0.2rem;
+}
+.header_nav ul{
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+}
+.header_nav a:hover{
+    background-color: black;
+}
+.Herobanner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20rem;
+}
+.wrapperConteiner-hero{
+     background-image: linear-gradient(transparent, rgb(248, 248, 35)); 
+}
+.hero_title{
+    font-size: 4.6rem;
+    margin-bottom: 4rem;
+}
+h2{
+    font-size: 4rem;
+    text-align: center;
+}
+h3{
+    font-size: 3rem;
+}
+.wrapperConteiner{
+    padding-top: 1px;
+}
+.cursosConteiner{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3rem;
+    margin-top: 4rem;
+    text-align: left;
+}
+
+.cursos_card {
+    margin-bottom: 5rem;
+    flex-grow: 1;
+}
+.cursos a{
+    display: inline-block;
+    margin-bottom: 10rem;
+}
+.cursos{
+    text-align: center;
+}
+.cursos_card_content{
+    padding: 4rem;
+}
+.cursos_card p{
+    line-height: 1.5;
+}
+.content-subhero {
+    display: flex;
+    text-align:left;
+}
+.content-subhero img{
+    margin-top: 7.5rem;
+    margin-right: 6rem;
+}
+.content__subhero h2{
+    padding: 4.5rem 0;
+    text-align: left;
+}
+.content__subhero p{
+    font-size: 2rem;
+}
+.content-map h2 {
+    padding: 3rem;
+}
+.endereço {
+    text-align: end;
+    font-size: 2rem;
+    margin: 6rem 0;
+}
+.end{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 3rem;
+}

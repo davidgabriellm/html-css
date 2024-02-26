@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+html, body{
+    height: 100%;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+.hero-content{
+    background-color: #162028;
+    display: flex;
+    justify-content: space-around; 
+    height: 80px;
+    padding: 0 20px ;
+    
+}
+.hero-content h1{
+    color: white;
+    font-size: 40px;
+}
+.hero img{
+    width: 100%;
+}
+.content__menu ul{
+    list-style-type: none;
+    display: flex;
+    padding: 20px;
+    gap: 50px;
+}
+.content__menu li{
+    font-size: 20px;
+    display: flex;
+    width: 100px;
+    color:  #425564;
+}
