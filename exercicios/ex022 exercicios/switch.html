@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+
+    <style>
+        body{
+            margin-top: 50px;
+        }
+        .switch{
+            --switch-color: #cfd8dc;
+            font-size: 1em;
+        }
+        .switch span {
+            display: inline-block;
+            width: 2em;
+            height: 1em;
+            border-radius: 1em;
+            outline: 2px solid var(--switch-color);
+        }
+        .switch span::after{
+            content: "";
+            display: flex;
+            width: 1em;
+            height: 1em;
+            border-radius: 50%;
+            background-color: red;
+            transition: transform 0.2s ease-in-out ;
+            transform: translateX(0);
+        }
+        .switch input:checked + span::after{
+            transform: translateX(100%);
+            background-color: green;
+        }
+        .switch input[type="checkbox"] {
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            position: absolute;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <label class="switch">
+        <input type="checkbox">
+        <span></span>
+        HTML
+    </label>
+    
+    <label class="switch">
+        <input type="checkbox">
+        <span></span>
+        CSS
+    </label>
+    
+    <label class="switch">
+        <input type="checkbox">
+        <span></span>
+        JAVASCRIPT
+    </label>
+</body>
+</html>
