@@ -2,6 +2,9 @@
     --primary-color: #FF7833;
     --secondary-color: #31333B;
     --secondary-color-light: #444856;
+    --secondary-color-dark: #23252d;
+    
+    --default-gap: 3rem;
 }
 body{
     display: flex;
@@ -11,22 +14,34 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     min-height: 100vh;
     line-height: 1.7;
+    background-image: url(../imagens/bg-unsplash.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 html{
     font-size: 62.5%;
+}
+.underline{
+    text-decoration: red wavy underline;
 }
 .main, .main-header { 
     font-size: 1.6rem;
 }
 .main-header{
     flex: 0 0 26rem;
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
+    background-color: rgba(49, 51, 59, 0.8);
     /* padding: 3.5rem; */
+
 }
 .main-header .main-nav{
     text-align: right;
     /* margin-top: 8rem; */
     padding: 6.5rem 2.4rem 2.4rem;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 .main-nav ul a{
     display: block;
@@ -34,14 +49,16 @@ html{
     transition: padding-right 0.2s ease-in-out, background-color 0.4s ease-in-out;
     background-color: transparent;
 }
-.main-nav ul a:hover{
+.main-nav ul a:hover, 
+.main-nav ul a:focus{
     background-color: var(--secondary-color-light);
     border-radius: 4px;
     margin: 1rem 0;
     padding-right: 2rem;
 }
 .main{
-    background-color: var(--secondary-color-light);
+    /* background-color: var(--secondary-color-light); */
+    background-color: rgba(68, 72, 86, 0.6);
     flex: 1 0;
     padding: 6.5rem 6rem 7.5rem;
 }
@@ -63,10 +80,11 @@ a{
     border-bottom: 2px solid rgba(255, 255, 255, 0.363);
     /* padding: 2rem 1rem 2rem; */
 }
-.main
-{
-    background-color: #444856;
-    flex: 1 0;}
+.hightlight{
+    border-left: 1px solid var(--primary-color);
+    font-size: 2rem;
+    padding-left: 4rem;
+    margin-bottom: 5rem;}
 h1{
     font-size: 4rem;
     color: #a9a7a7;
@@ -82,4 +100,129 @@ h2{
 article{
     padding-top: 1px;
     padding-bottom: 1px;
+}
+section{
+    margin-bottom: 5rem;
+}
+.card{
+    max-width: 74rem;
+    background-color: var(--secondary-color);
+    padding: 0;
+}
+.card_content {
+    padding: 0.5em 1em 1em;
+}
+.card_content p, 
+.card_title {
+    margin: 0;
+}
+.card_title {
+    font-size: 1.75em;
+    margin-bottom: 0.25em;
+}
+.card img{
+    max-width: 100%;
+}
+.row{
+    display: flex;
+    gap: var(--default-gap);
+    padding-top: 1.5rem;
+    justify-content: space-between;
+}
+.alternate{
+    list-style-type: none;
+    padding-left: 0;
+    
+}
+.alternate li{
+    padding: 0;
+}
+.alternate li:not(:last-child){
+    border-bottom: 2px solid;
+}
+.roman{
+    list-style-type: upper-roman;
+}
+.list-emoji {
+    list-style-type: "\1F642";
+}
+.row .row{
+    padding: 0;
+}
+.row *{
+    flex: 1 0 0%;
+}
+label, input, textarea, select{
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+}
+input, textarea, select{
+    background-color: #ccc;
+    padding: 1.2rem;
+    border-radius: 5px;
+    margin-bottom: 1.6rem;
+    border: 0;
+}
+.btn{
+    background-color: var(--secondary-color);
+    border: 2px solid var(--secondary-color-dark);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    /* padding: 1.2rem; */
+    padding: 0.8em 1.2em;
+    border-radius: 5px;
+}
+.btn + .btn{
+    margin-left: 2rem;
+}
+.btn:hover, .btn:focus{
+    background-color: var(--secondary-color-dark);
+}
+.form-quiz{
+    width: calc(50% - var(--default-gap) / 2);
+}
+.btn-stroke{
+    background-color: transparent;
+}
+.btn-big{
+    font-size: 1.6rem;
+}
+.btn-full{
+    width: 100%;
+    display: inline-block;
+}
+.btn-full + .btn-full{
+    margin-left: 0;
+    margin-top: 2rem;
+}
+.table td:last-child, .table th:last-child{
+    text-align: right;
+}
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.table td, .table th{
+    padding: 1.6rem;
+}
+.table:not(.table-alternate) td, .table:not(.table-alternate) th{
+    border-bottom: 2px solid var(--secondary-color-dark);
+}
+.table th{
+    text-transform: uppercase;
+    text-align: left;
+}
+.table-alternate tbody tr:nth-child(odd){
+    background-color: var(--secondary-color-dark);
+}
+.table-verticalLines td:not(:last-child), .table-verticalLines th:not(:last-child){
+    border-right: 1px solid var(--secondary-color-dark);
+}
+.img-serliv{
+    width: 48px;
 }
